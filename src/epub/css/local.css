@@ -7,21 +7,6 @@
 	hyphens: none;
 	-epub-hyphens: none;
 }
-
-[epub|type~="epigraph"] em,
-[epub|type~="epigraph"] i{
-	font-style: normal;
-}
-
-[epub|type~="epigraph"] cite{
-	font-style: normal;
-	font-variant: small-caps;
-	margin-top: 1em;
-}
-
-[epub|type~="epigraph"] cite i{
-	font-style: italic;
-}
 /* End all epigraphs */
 
 /* Full-page epigraphs */
@@ -51,10 +36,6 @@ section[epub|type~="epigraph"] > *{
 	section[epub|type~="epigraph"] > *{
 		margin: 0;
 	}
-
-	section[epub|type~="epigraph"] > * + *{
-		margin-top: 3em;
-	}
 }
 /* End full-page epigraphs */
 
@@ -73,12 +54,31 @@ section[epub|type~="epigraph"] > *{
 [epub|type~="z3998:verse"] p > span + br{
 	display: none;
 }
+
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
 /* End verse CSS */
+
+abbr[epub|type~="se:era"]{
+	font-variant: all-small-caps;
+}
 
 header{
 	font-variant: small-caps;
 	margin: 1em;
 	text-align: center;
+}
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+[epub|type~="z3998:recipient"],
+[epub|type~="z3998:signature"]{
+	font-variant: small-caps;
 }
 
 [epub|type~="z3998:diary-entry"] > p:first-of-type{
@@ -91,14 +91,26 @@ header{
 }
 
 #entry-1913-2-16 > p:last-of-type,
-#entry-1915-11-08 > p:last-of-type,
+#entry-1915-11-8 > p:last-of-type,
 #entry-1917-3-2 > div > p:last-of-type{
 	font-style: italic;
 	text-align: center;
 	text-indent: 0;
 }
 
+#entry-1913-10-4 > div > p:last-of-type,
+#entry-1914-11-20 > p:last-of-type,
 #part-3-3 > p:last-of-type{
 	text-align: center;
 	text-indent: 0;
+}
+
+#entry-1916-12-31 > div > blockquote > header > p:nth-of-type(2){
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+#entry-1916-12-31 > div > blockquote > header > p:last-of-type{
+	padding-left: 4em;
+	text-indent: -1em;
 }
