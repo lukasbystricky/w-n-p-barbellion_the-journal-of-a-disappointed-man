@@ -55,6 +55,11 @@ section[epub|type~="epigraph"] > *{
 	display: none;
 }
 
+p span.i3{
+	padding-left: 4em;
+	text-indent: -1em;
+}
+
 p span.i4{
 	padding-left: 5em;
 	text-indent: -1em;
@@ -76,6 +81,12 @@ header{
 footer{
 	margin-top: 1em;
 	text-align: right;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 1em;
+	margin: 0;
 }
 
 [epub|type~="z3998:recipient"],
@@ -101,7 +112,9 @@ footer{
 }
 
 #entry-1913-10-4 > div > p:last-of-type,
+#entry-1913-11-8 > p:nth-last-of-type(2),
 #entry-1914-11-20 > p:last-of-type,
+#entry-1915-10-6 > div > p:last-of-type,
 #part-3-3 > p:last-of-type{
 	text-align: center;
 	text-indent: 0;
