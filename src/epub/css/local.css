@@ -61,6 +61,8 @@ p span.i4{
 }
 /* End verse CSS */
 
+.telegram{ font-variant: all-small-caps; }
+
 abbr[epub|type~="se:era"]{
 	font-variant: all-small-caps;
 }
